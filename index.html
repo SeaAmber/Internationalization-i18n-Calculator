@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+
+ <h1 class="Calculate">Welcome</h1>
+ <p class="calculateP">Calculate in different languages</p>
+  
+ <div class="row">
+ <div>
+    <label for="firstNumber">First Number:</label>
+    <input type="text" id="firstNumber" placeholder="Enter the first number">
+ </div>
+
+ <div>
+    <label for="secondNumber">Second Number:</label>
+    <input type="text" id="secondNumber" placeholder="Enter the second number">
+ </div>
+    </div>
+
+ <label for="locale">Locale</label>
+ <select id="locale">
+ <option value="en-US">English (United States)</option>
+  <option value="en-GB">English (United Kingdom)</option>
+ <option value="fr-FR">French (France)</option>
+ <option value="de-DE">German (Germany)</option>
+ <option value="es-ES">Spanish (Spain)</option>
+ <option value="ja-JP">Japanese (Japan)</option>
+ <option value="hi-IN">Hindi (India)</option>
+ <option value="ar-EG">Arabic (Egypt)</option>
+ </select>
+
+  <div class="buttons">
+      <button class="btn-op" data-op="+">+</button>
+      <button class="btn-op" data-op="-">-</button>
+      <button class="btn-op" data-op="*">×</button>
+      <button class="btn-op" data-op="/">÷</button>
+  </div>
+
+
+    <div class="display">
+      <div class="display-line" id="expression">Expression: —</div>
+      <div class="display-line" id="raw-result">Raw result: —</div>
+      <div class="display-result" id="formatted-result">Formatted: —</div>
+    </div>
+
+    <div class="error" id="error"></div>
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>
